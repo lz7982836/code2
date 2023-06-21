@@ -1,34 +1,35 @@
 module.exports = {
   types: [
-    { value: 'feat', name: 'feat:     A new feature' },
-    { value: 'fix', name: 'fix:      A bug fix' },
-    { value: 'docs', name: 'docs:     Documentation only changes' },
+    { value: 'feat', name: 'feat:     增加新功能' },
+    { value: 'fix', name: 'fix:       修改bug' },
+    { value: 'docs', name: 'docs:     项目文档发生改变' },
     {
       value: 'style',
-      name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)',
+      name: 'style:    不影响功能但是调整了代码的格式\n            (white-space, formatting, missing semi-colons, etc)',
     },
     {
       value: 'refactor',
-      name: 'refactor: A code change that neither fixes a bug nor adds a feature',
+      name: 'refactor: 既没用修复bug也没有增加新功能',
     },
     {
       value: 'perf',
-      name: 'perf:     A code change that improves performance',
+      name: 'perf:     提升性能',
     },
-    { value: 'test', name: 'test:     Adding missing tests' },
+    { value: 'test', name: 'test:     测试' },
     {
       value: 'chore',
-      name: 'chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation',
+      name: 'chore:    修改构建工具配置或其他配置\n            and libraries such as documentation generation',
     },
-    { value: 'revert', name: 'revert:   Revert to a commit' },
-    { value: 'WIP', name: 'WIP:      Work in progress' },
+    { value: 'revert', name: 'revert:   代码回滚' },
+    { value: 'WIP', name: 'WIP:      工作中' },
   ],
 
   scopes: [
-    { name: 'accounts' },
-    { name: 'admin' },
-    { name: 'exampleScope' },
-    { name: 'changeMe' },
+    { name: 'home' },
+    { name: 'store' },
+    { name: 'account' },
+    { name: 'menu' },
+    { name: 'more' },
   ],
 
   usePreparedCommit: false, // to re-use commit from ./.git/COMMIT_EDITMSG
